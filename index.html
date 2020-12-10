@@ -3,12 +3,19 @@
 <title>Jere testisivu</title>
 
 <script>
-  console.log("koodia")
+  var otsikkoElementti = document.getElementByName("otsikko");
+  
+  function poistaOtsikko() {
+    otsikkoElementti.remove();
+  }
+  
+  otsikkoElementti.onclick = poistaOtsikko;
+  
 </script>
 
 <body style="background-color:#123456;">
 
-<h1>Mun oma nettisivu</h1>
+<h1 id="otsikko">Mun oma nettisivu</h1>
 <p>Tänne voi tehdä hauskoja vitsejä.</p>
 
 </body>
